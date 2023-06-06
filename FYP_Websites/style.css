@@ -1,0 +1,27 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-color: white;
+  background: linear-gradient(skyblue, lightgreen);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+h1{
+  color: darkred;
+  font-family:"Press Start 2P";
+  text-decoration: dotted underline;
+}
+h2{
+  color: darkblue;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p{
+  color: black;
+  font-family: Arial;
+}
+ul{
+  color: black;
+  font-family: sans-serif;
+}

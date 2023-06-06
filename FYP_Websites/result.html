@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <title>Result</title>
+ </head>
+  
+<body>
+  <h1><b>RESULT</b></h1>
+  <br>
+  <img src="/image/r1.png">
+  <p>Two Mean Absolute Percentage Errors (MAPE), for train data and test data, are applied. The main MAPE for choosing the best number of days to train for the prediction is the MAPE on Test Data value. The purpose of having both MAPE is to record the LSTM output whether it is over-fitted or under-fitted. The over-fitting happens when the test data rmse value is lower than the train data rmse. From the result given, there are no over-fitted outputs.</p>
+  <p>The variable used in this first approach in finding the best value for predicting the stock value is the timestep. From the result given, the number of days train of 5 is the best variable for the prediction, as the MAPE value for the test data, at 11.60% is the lowest compared to other training days. These are only the first steps in finding the best value for the prediction. The next table will be the accuracy result, affected by various numbers of hidden layers in the neural network.</p>
+  <img src="/image/r2.png">
+  <p>The variables used in this second approach in finding the best value for predicting the stock value is the number of the hidden layers for the LSTM algorithm. From the result given, the number of hidden layers of 50 is the best amount of the hidden layer for the prediction, as the MAPE value for the test data, at 11.21% is the lowest compared to previous 10 hidden layers at 11.60% and the rest of the hidden layer. Based on the result given, the number of hidden layers does affect the accuracy of the prediction. Below is the graph plot for the train and the test data alongside with the original chart.</p>
+  <h2><b>The Graph Accuracy</b></h2>
+  <img src="/image/r3.png">
+  
+</body>
+</html>

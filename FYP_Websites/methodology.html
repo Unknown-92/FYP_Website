@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <title>Methodology</title>
+ </head>
+
+ <body>
+  <h1><b>METHODOLOGY</b></h1>
+  <br>
+  <h2><b>Flowchart</b></h2>
+  <img src="/image/unnamed.png" height="600" title="This is the methodology flowchart">
+  <p>The flowchart above is the representation of the steps that will be applied throughout this research project. The first step is to import the stock market data. The stock data will be read by using the pandas.read_cvs function.There are few parameters in the stock data, but the one that will be used is the closing price, discarding other unnecessary parameters. Next is the input variable. From the stock data, 65% of the data will be used for the training process, while the remaining data is for the test prediction. Three input variables will be used in finding the best variables with the best prediction accuracy. The LSTM process trains the dataset from the stock data. The input variables. The input variables will be used in the training process. After that is to plot the chart of the training and the test result, and prediction for the next 30 days. In terms of finding the best accuracy, mean absolute percentage error is used.</p>
+  <h2><b>The Algorithm</b></h2>
+  <img src="/image/1.png" >
+  <p>The pandas read csv command is used because it is a quick and easy way to store large data sets. Next are the input variables, consisting of the time_step, node, and epochs. This represents the number of days of training to predict the next single day, the number of hidden layers in LSTM, and the number of repetitions through the training dataset respectively.</p>
+  <img src="/image/2.png" >
+  <p>MinMax scaler function is utilized. The purpose of this is to convert the big data (closing price) into a small form factor, between 0 and 1. The reason behind this is that the LSTM function can be sensitive toward big data value. Having scales from 0 to 1 will improve the LSTM process. The data frame is split up into 2 categories, training, and testing.</p>
+  <img src="/image/3.png" >
+  <p>LSTM function consists of the units and  return sequences. According to the node value, the units denote the number of hidden layers that will be employed. For each input time step, the return sequences are used to obtain the concealed state output. The training process begins at the model.fit function.</p>
+  <img src="/image/4.png" >
+  <p>Accuracy measurement for the prediction is by using the Mean Absolute Percentage Error (MAPE). It is determined as the average absolute percent inaccuracy for each time period minus actual values divided by real values, and it evaluates this accuracy as a percentage. The units of the variable are scaled to percentage units, making it easier to grasp. Next is the plotting of the train and the test predicted chart. Because of the time_step, the initial time_step data frame was not plotted as it is used for the training and prediction. The chart starts the training and test plotting after the initial time_step data frame.</p>
+
+  
+ </body>
+</html>
